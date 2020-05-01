@@ -9,20 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     
     @IBOutlet var allButtons: [UIButton]!
-
+    
     @IBOutlet weak var resultLabel: UILabel!
     
     var sum : Int? = 0
     var num : Int? = 0
-    var labelval:String = "";
+    var num2 :Int? = 0
+    var labelval:String? = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setLayout()
+        
     }
     func setLayout(){
         allButtons.forEach({
@@ -43,8 +46,8 @@ class ViewController: UIViewController {
             tapped = true
         }
         
+        
     }
-    var op = "+"
     
     @IBAction func acButton(_ sender: Any) {
         sum = 0
@@ -52,45 +55,76 @@ class ViewController: UIViewController {
         resultLabel.text = ""
     }
     var isPlus = false
+    var isMinus = false
+    var isMulti = false
+    var isDivid = false
     @IBAction func plusButton(_ sender: UIButton) {
-
-//        if isPlus == false {
-////            num = Int(resultLabel.text!)
-//            num = (Int(resultLabel.text!)!)
-//            print(num)
-////            sum = num!
-//            tapped = false
-//            isPlus = true
-//        }
-   if isPlus == false {
-               if let tmp_num = (Int(resultLabel.text!)!) {
-                   print(tmp_num)
-                   tapped = false
-                   isPlus = true
-               }
-   //            sum = num!
-               
-           }
-       
+        
+        if isPlus == false {
+            
+            num! = (Int(resultLabel.text!)!)
+            tapped = false
+            isPlus = true
+        }
+        
+        print("나 들어왔소")
+        
+        
     }
     
     @IBAction func equalButton(_ sender: UIButton) {
-//        let num2 = Int(resultLabel.text!)
-//        var result : Int?
-//        switch op{
-//        case "+":
-//            result = num! + num2!
-//        default :
-//            result = 0
-//
-//        }
         if isPlus{
-            let num2 = Int(resultLabel.text!)
+            num2! = (Int(resultLabel.text!)!)
+            
+            print(num2!)
             sum = num2! + num!
-            }
-        resultLabel.text = String(sum!)
-        sum = 0
-
+            
+            
+        }
+        if isMinus{
+            num2! = (Int(resultLabel.text!)!)
+            sum = num! - num2!
+        }
+        if isMulti{
+            num2! = (Int(resultLabel.text!)!)
+            sum = num! * num2!
+        }
+        if isDivid{
+            num2! = (Int(resultLabel.text!)!)
+            sum = num! / num2!
+        }
+        isPlus = true
+        isMulti = true
+        isMinus = true
+        isDivid = true
+        resultLabel?.text = String(sum!)
     }
+    
+    @IBAction func minusButton(_ sender: UIButton) {
+        if isMinus == false {
+            num! = (Int(resultLabel.text!)!)
+            tapped = false
+            isMinus = true
+        }
+        
+    }
+    
+    @IBAction func multiButton(_ sender: Any) {
+        if isMulti == false{
+            num! = (Int(resultLabel.text!)!)
+            tapped = false
+            isMulti = true
+        }
+        
+    }
+    
+    @IBAction func divideButton(_ sender: Any) {
+        if isDivid == false{
+                   num! = (Int(resultLabel.text!)!)
+                   tapped = false
+                   isDivid = true
+               }
+    }
+    
 }
 

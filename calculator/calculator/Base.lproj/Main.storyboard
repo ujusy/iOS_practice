@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5v-B0-9De">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5v-B0-9De">
                                 <rect key="frame" x="20" y="405" width="374" height="0.0"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -69,7 +69,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZs-TV-pk3"/>
+                                                    <action selector="divideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CCr-ie-mRe"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -118,7 +118,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E5k-Ld-oIg"/>
+                                                    <action selector="multiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TDe-te-sHH"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -167,7 +167,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sel-ET-69S"/>
+                                                    <action selector="minusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G51-It-Vtc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -205,7 +205,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lel-xn-ekk"/>
                                                     <action selector="equalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SPO-nZ-Qw3"/>
                                                 </connections>
                                             </button>
@@ -253,10 +252,10 @@
                         <outletCollection property="allButtons" destination="3v8-V4-2W1" collectionClass="NSMutableArray" id="Dg7-Sn-p0P"/>
                         <outletCollection property="allButtons" destination="QPZ-gs-mL0" collectionClass="NSMutableArray" id="LPD-7O-TKI"/>
                         <outletCollection property="allButtons" destination="390-Yc-1fQ" collectionClass="NSMutableArray" id="62B-3h-IHY"/>
-                        <outletCollection property="allButtons" destination="m4N-GY-D6x" collectionClass="NSMutableArray" id="0dl-xt-3FA"/>
                         <outletCollection property="allButtons" destination="w7c-jf-YKK" collectionClass="NSMutableArray" id="fy5-qE-Pf8"/>
                         <outletCollection property="allButtons" destination="mP7-Yd-mPM" collectionClass="NSMutableArray" id="S0M-43-ph7"/>
                         <outletCollection property="allButtons" destination="eUy-2l-piJ" collectionClass="NSMutableArray" id="bZg-cP-054"/>
+                        <outletCollection property="allButtons" destination="m4N-GY-D6x" collectionClass="NSMutableArray" id="yIX-RA-Y5h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
