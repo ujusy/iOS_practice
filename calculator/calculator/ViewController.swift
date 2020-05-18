@@ -67,8 +67,6 @@ class ViewController: UIViewController {
             isPlus = true
         }
         
-        print("나 들어왔소")
-        
         
     }
     

@@ -68,6 +68,9 @@
                                             <constraint firstAttribute="height" constant="48" id="aC2-Yc-Dpm"/>
                                         </constraints>
                                         <state key="normal" title="로그인"/>
+                                        <connections>
+                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j57-Of-EsX"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 회원이 아니신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMH-cT-460">
                                         <rect key="frame" x="39" y="336" width="146.66666666666666" height="23"/>
